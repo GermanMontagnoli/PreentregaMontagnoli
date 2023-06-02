@@ -57,10 +57,9 @@ nav ul a{
 
 
 .container{
-    background-image: url(../img/0445\ -\ AA003.jpg);
-    background-image: url(../img/0448\ -\ AA005.jpg) ;
+    background-image: url(../img/foto_demi.jpg);
     padding:200px;
-    background-position: center;
+    background-position: 437px;
     background-size: 920px;
     background-repeat: no-repeat;
     margin-left: 100px;
@@ -180,13 +179,18 @@ ul{
 @media (max-width: 600px) {
 
    .resume{
-    padding-left: 10px;
-    width: 550px;
+    width: 600px;
+    text-align: center;
    }
    
    p{
     font-size: 1.3rem;
    }
+   .cv{
+    padding-right: 70px;
+   }
+
+ 
     
 }
 
@@ -197,8 +201,7 @@ ul{
 }
 
 
-.formulario{
-    padding-left: 150px;
+.formu{    
     font-family: Helvetica;
     font-size: 1rem;
 }
@@ -279,25 +282,38 @@ ul{
     padding-left: 850px;
 }
 
-@media (max-width: 700px){
+@media (max-width: 600px){
     .titulo{
-        padding-left: 10px;
+        padding-left: 50px;
         margin-top: 200px;
         margin-bottom: 250px;
     }
 
     .encabezados{
-        padding-left: 120px;
+        padding-left: 170px;
     }
 
     .imagen{
-        margin-left: 50px;
+        margin-left: 100px;
         width: 400px;
+    }
+    .t-uno{
+        text-align: center
     }
 
 .link{
-    padding-left: 150px;
+    padding-left: 215px;
    }
+
+   .contacto{
+    padding-right: 160px;
+   }
+
+footer{
+    padding-left: 90px;
+    text-align: center;
+}
+
 }
 
 
@@ -386,4 +402,7 @@ ul{
 .bodyform{
     background-color: #eeeded;
 }
-
+.flecha a{
+    text-decoration: none;
+    color: black;
+}
