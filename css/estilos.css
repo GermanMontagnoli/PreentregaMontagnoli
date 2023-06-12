@@ -1,408 +1,707 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-@font-face{
+@font-face {
+  font-family: "Mattone";
+  src: url(../tipografias/mattone/Mattone-150.woff);
+  src: url(../tipografias/mattone/Mattone-150.woff2); }
+
+body {
+  background-color: #eeeded; }
+  body .boot {
+    background-color: #eeeded; }
+  body .bodyform {
+    background-color: #eeeded; }
+
+header nav {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between; }
+  header nav .GM {
     font-family: "Mattone";
-    src: url(../tipografias/mattone/Mattone-150.woff);
-    src: url(../tipografias/mattone/Mattone-150.woff2);
-}
-
-
-.boot{
-    background-color:#eeeded ;
-}
-
-
-body{
-      background-color: #eeeded;
-}
-    
-.GM{
-      font-family: "Mattone";
-      margin: auto;
-      position: fixed;
-      font-size: 25px;
-      padding-top: 5px;    
-}
-    
-nav{
-        margin: 30px;
-        display: flex;
-        justify-content: space-between;
-}
-    
-
-nav .GM a{
-        text-decoration: none;
-        color: black;
-}
-
-
-nav ul{
+    margin: auto;
+    position: fixed;
+    font-size: 25px;
+    padding-top: 5px; }
+    header nav .GM a {
+      text-decoration: none;
+      color: black; }
+  header nav .tipo {
+    font-family: Helvetica;
     list-style-type: none;
     display: flex;
     align-items: center;
-    padding: .7rem;
-}
+    padding: .7rem; }
+    header nav .tipo li a {
+      text-decoration: none;
+      color: black;
+      padding: 0.7rem; }
 
-nav ul a{
-    text-decoration: none;
-    color: black;
-    padding: 0.7rem;
-}
-
-
-
-.container{
-    background-image: url(../img/foto_demi.jpg);
-    padding:200px;
-    background-position: 437px;
-    background-size: 920px;
-    background-repeat: no-repeat;
-    margin-left: 100px;
-    margin-top: 130px;
-    margin-bottom: 450px;
-}
-
-h1{
+main .container {
+  background-image: url(../img/foto_demi.jpg);
+  padding: 200px;
+  background-position: 437px;
+  background-size: 920px;
+  background-repeat: no-repeat;
+  margin-left: 100px;
+  margin-top: 130px;
+  margin-bottom: 50px; }
+  main .container h1 {
     font-family: "Mattone";
-    font-size: 50px;   
-}
+    font-size: 50px; }
 
-
-.texto{
-    display: flex;
-    margin-bottom: 350px;
-    padding-left: 25px;
-}
-
-
-p{
+main .texto {
+  display: flex;
+  margin-bottom: 350px;
+  padding-left: 25px; }
+  main .texto .naci {
+    padding-top: 280px;
     font-family: Helvetica, sans-serif;
     font-size: 2rem;
-    padding: 70px;
-    margin-right: 5px;
-}
+    padding-left: 70px;
+    margin-right: 5px; }
+  main .texto .yo {
+    width: 950px;
+    padding: 90px;
+    height: 800px;
+    margin-top: 80px; }
 
+main h2 {
+  font-family: "mattone";
+  padding-left: 85px; }
 
-.yo{
-   width: 950px;
-   padding: 90px;
-   padding-top: 85px;
-   height: 800px;
-   margin-top: 80px;
-}
-
-
-h2{
-    font-family: "mattone";
-    padding-left: 85px;
-}
-
-
-.videos{
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 50px;
-    padding-left: 50px;
-    margin: 50px;
-}
-
-
-.v{
+main .videos {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-left: 50px;
+  margin: 50px; }
+  main .videos .v {
     width: 800px;
-    margin: 25px;
-    }
+    margin: 25px; }
 
+main .resume {
+  padding-left: 400px;
+  width: 1500px;
+  margin-bottom: 90px; }
+  main .resume .nuevotama {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif; }
 
-footer{
-    margin-top: 200px;
-    background-color: rgb(197, 197, 197);
-    height: 500px;
-}
+main .gerboy {
+  width: 10px;
+  padding-left: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 50px; }
+  main .gerboy .F {
+    width: 550px; }
 
-
-.contacto{
-    padding-top: 150px;
-    padding-left: 80px;
-}
-
-
-.links{
-    padding-top: 50px;
-    padding-left: 90px;
-    
-}   
-
-
-ul{
-    font-family: Helvetica;
-    list-style: none;
-}
-
-
-.resume{
-    padding-left: 400px;
-    width: 1500px;
-    margin-bottom: 90px;
-}
-
-
-.cv{
-    text-align: center;
-    text-decoration: none;
-    font-family: Helvetica;
-   
-}
-
-
-.cv a{
+main .cv {
+  padding-left: 750px;
+  text-decoration: none;
+  font-family: Helvetica; }
+  main .cv a {
     font-family: Helvetica;
     font-size: 1.5rem;
-    text-decoration: none;
-}
+    text-decoration: none; }
 
-@media (max-width: 1420px){
-    .resume{
-        padding-left: 20px;
-        width: 1200px;
-    }
+main .textform {
+  padding-left: 490px;
+  font-size: 2rem; }
 
-    p{
-        font-size: 1.5;
-    }
-}
-
-@media (max-width: 600px) {
-
-   .resume{
-    width: 600px;
-    text-align: center;
-   }
-   
-   p{
-    font-size: 1.3rem;
-   }
-   .cv{
-    padding-right: 70px;
-   }
-
- 
-    
-}
-
-
-
-.textform{
-    padding-left: 430px;
-}
-
-
-.formu{    
-    font-family: Helvetica;
-    font-size: 1rem;
-}
-
-
-.N{
-    margin-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    padding-right: 1500px;
-}
-
-.cuadrito{
-    margin-left: 150px;
-    
-}
-
-
-.E{
-    padding-top: 25px;
-    margin-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    padding-right: 1500px;
-}
-
-
-.D{
-    padding-top: 25px;
-    margin-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    padding-right: 500px;
-}
-
-
-.enviar{
-    padding-left: 900px;
-    font-family: Helvetica;
-    padding-top: 15px;
-}
-
-
-.titulo{
-    padding-left: 635px;
-    margin-top: 350px;
-    margin-bottom: 500px;
-    font-size: 1.8rem;
-}
-
-
-.encabezados{
-    padding-left: 75px;
-}
-
-
-.imagen {
-    margin-left: 440px;
-    width: 1000px
-}
-
-
-.trabajo1{
-    margin-bottom: 25px;
-    font-family: "mattone";
-}
-
-
-.t-uno{
-    font-family:Helvetica;
-    font-size: 1.2rem;
-    padding-left: 80px;
-}
-
-.link{
-    font-family: "mattone";
-    font-size: 1.2rem;
-    padding-left: 850px;
-}
-
-@media (max-width: 600px){
-    .titulo{
-        padding-left: 50px;
-        margin-top: 200px;
-        margin-bottom: 250px;
-    }
-
-    .encabezados{
-        padding-left: 170px;
-    }
-
-    .imagen{
-        margin-left: 100px;
-        width: 400px;
-    }
-    .t-uno{
-        text-align: center
-    }
-
-.link{
-    padding-left: 215px;
-   }
-
-   .contacto{
-    padding-right: 160px;
-   }
-
-footer{
-    padding-left: 90px;
-    text-align: center;
-}
-
-}
-
-
-.grid{
-    width: 10px;
-    padding-left: 80px;
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    gap: 15px;
-}
-
-
-
-.F{
-    width: 550px;
-}
-
-
-
-.O{
-    width: 550px;
-}
-
-
-
-.T{
-    width: 550px;
-}
-
-
-
-.grid2{
-    width: 10px;
-    padding-left: 70px;
-    display:grid;
-    gap: 15px;
-    justify-items: center;
-    align-items: center;
-}
-
-
-.holi{
-    display: flex;
-}
-
-
-.P{
-    margin-left: 80px;
-    width: 900px;
-}
-
-
-.bajada{
-    font-family:Helvetica;
-    font-size: 1.2rem;
-    margin-top: 120px;
-}
-
-
-.mb-4{
+main .formu {
+  font-family: Helvetica;
+  font-size: 1rem;
+  padding-left: 80px; }
+  main .formu .mb-4 {
     margin-left: 185px;
-    padding-right: 300px;
-}
+    padding-right: 300px; }
+  main .formu .btn {
+    margin-left: 845px; }
 
-.boton{
-    margin-left: 85px;
-}
+main .titulo {
+  padding-left: 635px;
+  margin-top: 350px;
+  margin-bottom: 170px;
+  font-size: 1.8rem; }
 
+main .encabezados {
+  padding-left: 220px;
+  font-size: 1.8rem; }
 
+main .imagen {
+  margin-left: 440px;
+  width: 1000px; }
 
-.btn{
-   margin-left: 845px;
-}
+main .titutra {
+  margin-top: 300px;
+  margin-bottom: 25px;
+  font-family: "mattone"; }
 
+main .trabajo1 {
+  margin-top: 130px;
+  margin-bottom: 25px;
+  font-family: "mattone"; }
 
-.pie{
+main .descript1 {
+  padding-left: 840px;
+  padding-top: 40px;
+  font-size: 1.5rem; }
+
+main .descript2 {
+  padding-left: 760px;
+  padding-top: 40px;
+  font-size: 1.5rem; }
+
+main .link {
+  font-family: "mattone";
+  font-size: 1rem;
+  padding-left: 870px;
+  padding-top: 50px;
+  padding-bottom: 90px; }
+  main .link a {
+    text-decoration: none; }
+
+main .linko {
+  font-family: "mattone";
+  font-size: 1rem;
+  padding-left: 870px;
+  padding-top: 50px;
+  padding-bottom: 90px; }
+  main .linko a {
+    text-decoration: none; }
+
+main .videotra {
+  width: 400px;
+  margin-top: 40px;
+  padding-left: 400px;
+  margin-bottom: 20px; }
+  main .videotra .videoss {
+    width: 1000px; }
+
+main .t-uno {
+  font-family: Helvetica;
+  font-size: 1.2rem;
+  padding-left: 80px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-right: 80px; }
+
+main .grid {
+  width: 10px;
+  padding-left: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px; }
+  main .grid .D {
+    width: 550px; }
+
+main .holi {
+  display: flex;
+  margin-top: 90px; }
+  main .holi .P {
+    margin-left: 80px;
+    width: 900px; }
+  main .holi .E {
+    margin-left: 80px;
+    width: 900px; }
+  main .holi .bajada {
+    font-family: Helvetica;
+    font-size: 1.2rem;
+    margin-top: 200px;
+    padding-right: 80px;
+    padding-left: 20px; }
+
+main .volver {
+  padding-top: 180px;
+  padding-left: 870px;
+  align-items: center; }
+  main .volver a {
+    text-decoration: dotted;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif; }
+
+@media (max-width: 1440px) {
+  main .container {
+    padding: 140px;
+    margin-left: 0px;
+    background-size: 900px; }
+    main .container h1 {
+      font-size: 2rem; }
+  main .texto .yo {
+    margin-top: 225px; }
+  main .videos {
+    padding-left: 250px; }
+  main .titulo {
+    margin-top: 200px;
+    margin-bottom: 80px;
+    padding-left: 420px; }
+  main .encabezados {
+    padding-left: 130px; }
+  main .titutra {
+    margin-top: 190px; }
+  main .imagen {
+    margin-left: 290px;
+    width: 850px; }
+  main .descript1 {
+    padding-left: 600px; }
+  main .link {
+    padding-left: 624px; }
+  main .descript2 {
+    padding-left: 555px; }
+  main .resume {
+    padding-left: 70px;
+    text-align: center;
+    width: 1440px; }
+    main .resume .nuevotama {
+      font-size: 1.2rem;
+      width: 1300px; }
+  main .gerboy {
+    padding-left: 160px;
+    grid-template-columns: 1fr 1fr; }
+  main .cv {
+    padding-left: 550px; }
+  main .textform {
+    padding-left: 215px; }
+  main .formu .mb-4 {
+    margin-left: 135px;
+    padding-right: 300px; }
+  main .formu .btn {
+    margin-left: 545px; }
+  main .videotra {
+    padding-left: 300px; }
+    main .videotra .videoss {
+      width: 800px; }
+  main .trabajo1 {
+    margin-top: 10px; }
+  main .grid .D {
+    width: 410px; }
+  main .volver {
+    padding-left: 600px; }
+  main .holi .E {
+    padding-top: 50px;
+    width: 900px;
+    height: 450px; }
+  main .holi .bajada {
+    margin-top: 110px; } }
+
+@media (max-width: 1024px) {
+  main .container {
+    padding: 100px;
+    margin-left: 0px;
+    background-size: 900px;
+    background-position: 200px; }
+    main .container h1 {
+      font-size: 2rem; }
+  main .texto .yo {
+    margin-top: 225px;
+    height: 700px; }
+  main .texto .naci {
+    font-size: 1.3rem; }
+  main .videos {
+    padding-left: 100px; }
+    main .videos .v {
+      width: 700px; }
+  main .titulo {
+    margin-top: 200px;
+    margin-bottom: 80px;
+    padding-left: 220px; }
+  main .encabezados {
+    padding-left: 100px; }
+  main .titutra {
+    margin-top: 270px; }
+  main .imagen {
+    margin-left: 150px;
+    width: 750px; }
+  main .descript1 {
+    padding-left: 400px; }
+  main .link {
+    padding-left: 424px; }
+  main .linko {
+    padding-left: 444px; }
+  main .descript2 {
+    padding-left: 355px; }
+  main .resume {
+    padding-left: 70px;
+    text-align: center;
+    width: 1024px; }
+    main .resume .nuevotama {
+      font-size: 1.2rem;
+      width: 920px; }
+  main .gerboy {
+    padding-left: 80px;
+    grid-template-columns: 1fr 1fr; }
+    main .gerboy .F {
+      width: 450px; }
+  main .cv {
+    padding-left: 350px; }
+  main .textform {
+    padding-left: 115px;
+    font-size: 1.8rem; }
+  main .formu .mb-4 {
+    margin-left: 135px;
+    padding-right: 300px; }
+  main .formu .btn {
+    margin-left: 345px; }
+  main .videotra {
+    padding-left: 180px; }
+    main .videotra .videoss {
+      width: 650px; }
+  main .trabajo1 {
+    margin-top: 10px; }
+  main .grid .D {
+    width: 290px; }
+  main .volver {
+    padding-left: 400px; }
+  main .holi .P {
+    width: 600px; }
+  main .holi .E {
+    padding-top: 50px;
+    width: 400px;
+    height: 250px; }
+  main .holi .bajada {
+    margin-top: 40px; } }
+
+@media (max-width: 768px) {
+  main .container {
+    padding: 100px;
+    margin-left: 0px;
+    background-size: 700px;
+    background-position: 150px;
+    margin-bottom: 0px; }
+    main .container h1 {
+      font-size: 1.8rem; }
+  main .texto .yo {
+    margin-top: 100px;
+    height: 600px; }
+  main .texto .naci {
+    padding-top: 110px;
+    font-size: 1rem; }
+  main .videos {
+    padding-left: 40px; }
+    main .videos .v {
+      width: 550px; }
+  main .titulo {
+    margin-top: 200px;
+    margin-bottom: 80px;
+    padding-left: 100px; }
+  main .encabezados {
+    padding-left: 80px;
+    font-size: 1.6rem; }
+  main .titutra {
+    margin-top: 270px; }
+  main .imagen {
+    margin-left: 100px;
+    width: 550px; }
+  main .descript1 {
+    padding-left: 280px; }
+  main .link {
+    padding-left: 310px; }
+  main .descript2 {
+    padding-left: 220px; }
+  main .linko {
+    padding-left: 320px; }
+  main .resume {
+    padding-left: 70px;
+    text-align: center;
+    width: 768px; }
+    main .resume .nuevotama {
+      font-size: 1.2rem;
+      width: 650px; }
+  main .gerboy {
+    padding-left: 80px;
+    grid-template-columns: 1fr 1fr; }
+    main .gerboy .F {
+      width: 300px; }
+  main .cv {
+    padding-left: 210px; }
+  main .textform {
+    padding-left: 95px;
+    font-size: 1.3rem; }
+  main .formu .mb-4 {
+    margin-left: 100px;
+    padding-right: 250px; }
+  main .formu .btn {
+    margin-left: 235px; }
+  main .videotra {
+    padding-left: 130px; }
+    main .videotra .videoss {
+      width: 500px; }
+  main .t-uno {
+    text-align: center; }
+  main .trabajo1 {
+    margin-top: 10px; }
+  main .grid .D {
+    width: 200px; }
+  main .volver {
+    padding-left: 270px; }
+  main .holi {
     display: flex;
-}
+    flex-direction: column; }
+    main .holi .P {
+      padding-left: 25px;
+      width: 500; }
+    main .holi .E {
+      padding-top: 50px;
+      width: 600px;
+      height: 350px;
+      padding-left: 20px; }
+    main .holi .bajada {
+      margin-top: 40px;
+      padding-left: 90px;
+      text-align: center; } }
 
+@media (max-width: 480px) {
+  main .container {
+    padding: 50px;
+    margin-left: 0px;
+    background-size: 370px;
+    background-position: 90px;
+    margin-bottom: 0px; }
+    main .container h1 {
+      font-size: 1.8rem; }
+  main .texto {
+    display: flex;
+    flex-direction: column; }
+    main .texto .yo {
+      padding-left: 35px;
+      margin-top: 0px;
+      height: 700px;
+      width: 500px; }
+    main .texto .naci {
+      padding-left: 25px;
+      padding-top: 110px;
+      font-size: 1rem; }
+  main .traba {
+    padding-left: 170px; }
+  main .videos {
+    padding-left: 0px;
+    margin: 15px; }
+    main .videos .v {
+      width: 410px; }
+  main .titulo {
+    margin-top: 200px;
+    margin-bottom: 80px;
+    padding-left: 0px; }
+    main .titulo h2 {
+      font-size: 1.5rem; }
+  main .titutra {
+    margin-top: 270px;
+    padding-left: 95px;
+    font-size: 1.7rem; }
+  main .imagen {
+    margin-left: 40px;
+    width: 400px; }
+  main .descript1 {
+    padding-left: 135px; }
+  main .link {
+    padding-left: 165px; }
+  main .trabajo1 {
+    margin-top: 270px;
+    padding-left: 105px;
+    font-size: 1.7rem; }
+  main .descript2 {
+    padding-left: 85px; }
+  main .linko {
+    padding-left: 165px; }
+  main .resume {
+    padding-left: 70px;
+    text-align: center;
+    width: 768px; }
+    main .resume .nuevotama {
+      font-size: 1.2rem;
+      width: 370px; }
+  main .gerboy {
+    padding-left: 60px;
+    grid-template-columns: 1fr; }
+    main .gerboy .F {
+      width: 370px; }
+  main .cv {
+    padding-left: 70px; }
+  main .textform {
+    padding-left: 55px;
+    font-size: 1rem; }
+  main .formu .mb-4 {
+    margin-left: 30px;
+    padding-right: 100px; }
+  main .formu .btn {
+    margin-left: 115px; }
+  main .videotra {
+    padding-left: 40px; }
+    main .videotra .videoss {
+      width: 400px; }
+  main .t-uno {
+    text-align: center; }
+  main .trabajo1 {
+    margin-top: 10px; }
+  main .grid {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px; }
+    main .grid .D {
+      width: 400px; }
+  main .volver {
+    padding-left: 270px; }
+  main .holi {
+    display: flex;
+    flex-direction: column; }
+    main .holi .P {
+      height: 800;
+      width: 400px;
+      padding: 0px;
+      padding-right: 80px; }
+    main .holi .E {
+      padding-top: 50px;
+      width: 400px;
+      height: 250px;
+      padding-left: 0px;
+      padding-right: 80px; }
+    main .holi .bajada {
+      margin-top: 40px;
+      padding-left: 90px;
+      text-align: center; }
+  main .volver {
+    padding-left: 130px; } }
 
-.flechi{
-    padding-left: 1400px;
-    margin-top: 80px;
-}
+@media (max-width: 320px) {
+  header nav .tipo {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem; }
+  main .container {
+    padding: 50px;
+    margin-left: 0px;
+    background-size: 370px;
+    background-position: 90px;
+    margin-bottom: 0px; }
+    main .container h1 {
+      font-size: 1.8rem; }
+  main .texto {
+    display: flex;
+    flex-direction: column; }
+    main .texto .yo {
+      padding-left: 5px;
+      margin-top: 0px;
+      height: 590px;
+      width: 350px; }
+    main .texto .naci {
+      padding-left: 0px;
+      padding-top: 110px;
+      font-size: 1rem;
+      text-align: center; }
+  main .traba {
+    padding-left: 100px; }
+  main .videos {
+    padding-left: 0px;
+    margin: 15px; }
+    main .videos .v {
+      width: 250px; }
+  main .titulo {
+    margin-top: 200px;
+    margin-bottom: 80px;
+    padding-left: 0px; }
+    main .titulo h2 {
+      font-size: 1.5rem; }
+  main .titutra {
+    margin-top: 270px;
+    padding-left: 35px;
+    font-size: 1.7rem; }
+  main .imagen {
+    margin-left: 40px;
+    width: 250px; }
+  main .descript1 {
+    padding-left: 95px;
+    font-size: 1.2rem; }
+  main .link {
+    padding-left: 115px;
+    font-size: .8rem; }
+  main .trabajo1 {
+    margin-top: 270px;
+    padding-left: 35px;
+    font-size: 1.8rem; }
+  main .descript2 {
+    padding-left: 85px; }
+  main .linko {
+    padding-left: 105px;
+    font-size: .8rem; }
+  main .resume {
+    padding-left: 30px;
+    text-align: center;
+    width: 768px; }
+    main .resume .nuevotama {
+      font-size: 1.2rem;
+      width: 270px; }
+  main .gerboy {
+    padding-left: 40px;
+    grid-template-columns: 1fr; }
+    main .gerboy .F {
+      width: 240px; }
+  main .cv {
+    padding-left: 10px; }
+  main .textform {
+    padding-left: 55px;
+    font-size: 1rem; }
+    main .textform p {
+      font-size: 2rem; }
+  main .formu .mb-4 {
+    margin-left: 5px;
+    padding-right: 80px; }
+  main .formu .btn {
+    margin-left: 40px; }
+  main .videotra {
+    padding-left: 40px; }
+    main .videotra .videoss {
+      width: 250px; }
+  main .t-uno {
+    text-align: center;
+    font-size: 1rem; }
+  main .trabajo1 {
+    margin-top: 10px; }
+  main .grid {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px; }
+    main .grid .D {
+      width: 240px; }
+  main .volver {
+    padding-left: 270px; }
+  main .holi {
+    display: flex;
+    flex-direction: column; }
+    main .holi .P {
+      height: 800;
+      width: 250px;
+      padding: 0px;
+      padding-right: 80px; }
+    main .holi .E {
+      padding-top: 50px;
+      width: 250px;
+      height: 150px;
+      padding-left: 0px;
+      padding-right: 80px; }
+    main .holi .bajada {
+      margin-top: 40px;
+      padding-left: 90px;
+      text-align: center;
+      font-size: 1rem; }
+  main .volver {
+    padding-left: 100px; } }
 
-.bodyform{
-    background-color: #eeeded;
-}
-.flecha a{
-    text-decoration: none;
-    color: black;
-}
+footer {
+  margin-top: 200px;
+  background-color: #c5c5c5;
+  height: 500px; }
+  footer .contacto {
+    padding-top: 150px;
+    padding-left: 60px; }
+  footer .pie {
+    display: flex; }
+  footer .links {
+    padding-top: 50px;
+    padding-left: 20px;
+    font-family: Helvetica;
+    list-style: none; }
