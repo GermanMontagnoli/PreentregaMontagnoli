@@ -40,7 +40,7 @@ header nav {
       padding: 0.7rem; }
 
 main .container {
-  background-image: url(../img/foto_demi.jpg);
+  background-image: url(../assets/img/foto_demi.jpg);
   padding: 200px;
   background-position: 437px;
   background-size: 920px;
@@ -107,7 +107,8 @@ main .cv {
   main .cv a {
     font-family: Helvetica;
     font-size: 1.5rem;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #1f812f; }
 
 main .textform {
   padding-left: 490px;
@@ -164,7 +165,8 @@ main .link {
   padding-top: 50px;
   padding-bottom: 90px; }
   main .link a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #1f812f; }
 
 main .linko {
   font-family: "mattone";
@@ -173,7 +175,8 @@ main .linko {
   padding-top: 50px;
   padding-bottom: 90px; }
   main .linko a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #1f812f; }
 
 main .videotra {
   width: 400px;
@@ -222,8 +225,26 @@ main .volver {
   align-items: center; }
   main .volver a {
     text-decoration: dotted;
-    color: blue;
+    color: #1f812f;
     font-family: Arial, Helvetica, sans-serif; }
+
+footer {
+  margin-top: 200px;
+  background-color: #c5c5c5;
+  height: 500px; }
+  footer .contacto {
+    padding-top: 150px;
+    padding-left: 60px; }
+  footer .pie {
+    display: flex; }
+  footer .links {
+    padding-top: 50px;
+    padding-left: 60px;
+    font-family: Helvetica;
+    list-style: none; }
+    footer .links a {
+      text-decoration: none;
+      color: #1f812f; }
 
 @media (max-width: 1440px) {
   main .container {
@@ -470,12 +491,13 @@ main .volver {
     main .texto .yo {
       padding-left: 35px;
       margin-top: 0px;
-      height: 700px;
-      width: 500px; }
+      height: 600px;
+      width: 400px; }
     main .texto .naci {
-      padding-left: 25px;
+      padding-left: 5px;
       padding-top: 110px;
-      font-size: 1rem; }
+      font-size: 1rem;
+      text-align: center; }
   main .traba {
     padding-left: 170px; }
   main .videos {
@@ -511,7 +533,7 @@ main .volver {
   main .resume {
     padding-left: 70px;
     text-align: center;
-    width: 768px; }
+    width: 370px; }
     main .resume .nuevotama {
       font-size: 1.2rem;
       width: 370px; }
@@ -584,15 +606,16 @@ main .volver {
     display: flex;
     flex-direction: column; }
     main .texto .yo {
-      padding-left: 5px;
+      padding-left: 20px;
       margin-top: 0px;
-      height: 590px;
-      width: 350px; }
+      height: 490px;
+      width: 290px; }
     main .texto .naci {
       padding-left: 0px;
       padding-top: 110px;
       font-size: 1rem;
-      text-align: center; }
+      text-align: center;
+      width: 240px; }
   main .traba {
     padding-left: 100px; }
   main .videos {
@@ -631,7 +654,7 @@ main .volver {
   main .resume {
     padding-left: 30px;
     text-align: center;
-    width: 768px; }
+    width: 270px; }
     main .resume .nuevotama {
       font-size: 1.2rem;
       width: 270px; }
@@ -653,6 +676,7 @@ main .volver {
   main .formu .btn {
     margin-left: 40px; }
   main .videotra {
+    width: 1px;
     padding-left: 40px; }
     main .videotra .videoss {
       width: 250px; }
@@ -673,7 +697,7 @@ main .volver {
     display: flex;
     flex-direction: column; }
     main .holi .P {
-      height: 800;
+      height: 150px;
       width: 250px;
       padding: 0px;
       padding-right: 80px; }
@@ -691,17 +715,32 @@ main .volver {
   main .volver {
     padding-left: 100px; } }
 
-footer {
-  margin-top: 200px;
-  background-color: #c5c5c5;
-  height: 500px; }
-  footer .contacto {
-    padding-top: 150px;
-    padding-left: 60px; }
-  footer .pie {
-    display: flex; }
-  footer .links {
-    padding-top: 50px;
-    padding-left: 20px;
-    font-family: Helvetica;
-    list-style: none; }
+@keyframes arrowAnimation {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(20px); }
+  100% {
+    transform: translateY(0); } }
+
+.arrow {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin: 100px auto; }
+
+.arrow::before,
+.arrow::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent; }
+
+.arrow::after {
+  border-top-color: #000;
+  transform: translateY(-50%); }
+
+.arrow.animate {
+  animation: arrowAnimation 1s ease-in-out infinite; }

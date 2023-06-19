@@ -1,0 +1,39 @@
+header{
+
+    nav{
+        margin: 30px;
+        display: flex;
+        justify-content: space-between;
+        
+        .GM{
+            font-family: "Mattone";
+            margin: auto;
+            position: fixed;
+            font-size: 25px;
+            padding-top: 5px;   
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        
+        }
+        
+        .tipo{
+            font-family:Helvetica;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            padding: .7rem;
+            li{
+                a{
+                    text-decoration: none;
+                    color: black;
+                    padding: 0.7rem;
+                    
+                }
+            }
+        }
+        
+        
+    }
+}
